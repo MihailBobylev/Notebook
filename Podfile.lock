@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.6.1)
+  - EGOCache (2.2.0)
+  - ImageViewer.swift (3.3.7)
+  - SDWebImage (5.13.0):
+    - SDWebImage/Core (= 5.13.0)
+  - SDWebImage/Core (5.13.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - EGOCache (~> 2.2.0)
+  - ImageViewer.swift (~> 3.0)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - EGOCache
+    - ImageViewer.swift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  EGOCache: 191fd213da6804d487b49b1a91772ba904f3e324
+  ImageViewer.swift: 2acc01513bc39f9d7c1ee51042055755971ad9da
+  SDWebImage: 0327043dbb9533e75f2eff8445b3df0f2ceca6ac
+
+PODFILE CHECKSUM: 9de74943200c7726a6c3d97c192f6ba62dff75e0
+
+COCOAPODS: 1.11.3

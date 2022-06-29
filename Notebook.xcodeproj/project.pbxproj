@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		744FD03F28658FE000337D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD03E28658FE000337D27 /* AppDelegate.swift */; };
+		744FD04128658FE000337D27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD04028658FE000337D27 /* SceneDelegate.swift */; };
+		744FD04628658FE000337D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FD04428658FE000337D27 /* Main.storyboard */; };
+		744FD04928658FE000337D27 /* Notebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 744FD04728658FE000337D27 /* Notebook.xcdatamodeld */; };
+		744FD04B28658FE200337D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744FD04A28658FE200337D27 /* Assets.xcassets */; };
+		744FD04E28658FE200337D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FD04C28658FE200337D27 /* LaunchScreen.storyboard */; };
+		744FD05A286591A200337D27 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD058286591A200337D27 /* UserInfoCell.swift */; };
+		744FD05B286591A200337D27 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744FD059286591A200337D27 /* UserInfoCell.xib */; };
+		744FD05E2865984A00337D27 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD05D2865984A00337D27 /* UserViewController.swift */; };
+		744FD06128659D2B00337D27 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD06028659D2B00337D27 /* AlamofireService.swift */; };
+		744FD06328659D7100337D27 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD06228659D7100337D27 /* UserModel.swift */; };
+		744FD08B2865EB4500337D27 /* UserTableItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FD08A2865EB4500337D27 /* UserTableItem.storyboard */; };
+		744FD08D2865FA9C00337D27 /* UserTableItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD08C2865FA9B00337D27 /* UserTableItemViewController.swift */; };
+		D33434326A44205E51E42E6E /* Pods_Notebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB72797A23A87FEFE9F362D /* Pods_Notebook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FB72797A23A87FEFE9F362D /* Pods_Notebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1DA431E0C069FDB0787BA8 /* Pods-Notebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook.debug.xcconfig"; path = "Target Support Files/Pods-Notebook/Pods-Notebook.debug.xcconfig"; sourceTree = "<group>"; };
+		744FD03B28658FE000337D27 /* Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		744FD03E28658FE000337D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		744FD04028658FE000337D27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		744FD04528658FE000337D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		744FD04828658FE000337D27 /* Notebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notebook.xcdatamodel; sourceTree = "<group>"; };
+		744FD04A28658FE200337D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		744FD04D28658FE200337D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		744FD04F28658FE200337D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744FD058286591A200337D27 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		744FD059286591A200337D27 /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		744FD05D2865984A00337D27 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		744FD06028659D2B00337D27 /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		744FD06228659D7100337D27 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		744FD08A2865EB4500337D27 /* UserTableItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTableItem.storyboard; sourceTree = "<group>"; };
+		744FD08C2865FA9B00337D27 /* UserTableItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableItemViewController.swift; sourceTree = "<group>"; };
+		CEDF71DC38334973E869B2DA /* Pods-Notebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook.release.xcconfig"; path = "Target Support Files/Pods-Notebook/Pods-Notebook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744FD03828658FE000337D27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33434326A44205E51E42E6E /* Pods_Notebook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A60D84578127FC7129FB27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DA431E0C069FDB0787BA8 /* Pods-Notebook.debug.xcconfig */,
+				CEDF71DC38334973E869B2DA /* Pods-Notebook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		744FD03228658FE000337D27 = {
+			isa = PBXGroup;
+			children = (
+				744FD03D28658FE000337D27 /* Notebook */,
+				744FD03C28658FE000337D27 /* Products */,
+				09A60D84578127FC7129FB27 /* Pods */,
+				A2B3FB5035C5A9203C6B21AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		744FD03C28658FE000337D27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744FD03B28658FE000337D27 /* Notebook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744FD03D28658FE000337D27 /* Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				744FD03E28658FE000337D27 /* AppDelegate.swift */,
+				744FD04028658FE000337D27 /* SceneDelegate.swift */,
+				744FD05F28659D1600337D27 /* Services */,
+				744FD0562865905A00337D27 /* Models */,
+				744FD0572865906500337D27 /* Controllers */,
+				744FD0552865905200337D27 /* Views */,
+				744FD04A28658FE200337D27 /* Assets.xcassets */,
+				744FD04C28658FE200337D27 /* LaunchScreen.storyboard */,
+				744FD04F28658FE200337D27 /* Info.plist */,
+				744FD04728658FE000337D27 /* Notebook.xcdatamodeld */,
+			);
+			path = Notebook;
+			sourceTree = "<group>";
+		};
+		744FD0552865905200337D27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				744FD04428658FE000337D27 /* Main.storyboard */,
+				744FD08A2865EB4500337D27 /* UserTableItem.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		744FD0562865905A00337D27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				744FD06228659D7100337D27 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		744FD0572865906500337D27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				744FD05D2865984A00337D27 /* UserViewController.swift */,
+				744FD08C2865FA9B00337D27 /* UserTableItemViewController.swift */,
+				744FD05C286591B600337D27 /* CellControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		744FD05C286591B600337D27 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				744FD058286591A200337D27 /* UserInfoCell.swift */,
+				744FD059286591A200337D27 /* UserInfoCell.xib */,
+			);
+			path = CellControllers;
+			sourceTree = "<group>";
+		};
+		744FD05F28659D1600337D27 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				744FD06028659D2B00337D27 /* AlamofireService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A2B3FB5035C5A9203C6B21AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB72797A23A87FEFE9F362D /* Pods_Notebook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744FD03A28658FE000337D27 /* Notebook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744FD05228658FE200337D27 /* Build configuration list for PBXNativeTarget "Notebook" */;
+			buildPhases = (
+				7E242A94844C618B5363DF0A /* [CP] Check Pods Manifest.lock */,
+				744FD03728658FE000337D27 /* Sources */,
+				744FD03828658FE000337D27 /* Frameworks */,
+				744FD03928658FE000337D27 /* Resources */,
+				476D3311EFB9EE2A8D9A65C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notebook;
+			productName = Notebook;
+			productReference = 744FD03B28658FE000337D27 /* Notebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744FD03328658FE000337D27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					744FD03A28658FE000337D27 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 744FD03628658FE000337D27 /* Build configuration list for PBXProject "Notebook" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 744FD03228658FE000337D27;
+			productRefGroup = 744FD03C28658FE000337D27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744FD03A28658FE000337D27 /* Notebook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		744FD03928658FE000337D27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744FD08B2865EB4500337D27 /* UserTableItem.storyboard in Resources */,
+				744FD05B286591A200337D27 /* UserInfoCell.xib in Resources */,
+				744FD04E28658FE200337D27 /* LaunchScreen.storyboard in Resources */,
+				744FD04B28658FE200337D27 /* Assets.xcassets in Resources */,
+				744FD04628658FE000337D27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		476D3311EFB9EE2A8D9A65C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notebook/Pods-Notebook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notebook/Pods-Notebook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notebook/Pods-Notebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E242A94844C618B5363DF0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744FD03728658FE000337D27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744FD05E2865984A00337D27 /* UserViewController.swift in Sources */,
+				744FD06328659D7100337D27 /* UserModel.swift in Sources */,
+				744FD03F28658FE000337D27 /* AppDelegate.swift in Sources */,
+				744FD04928658FE000337D27 /* Notebook.xcdatamodeld in Sources */,
+				744FD05A286591A200337D27 /* UserInfoCell.swift in Sources */,
+				744FD08D2865FA9C00337D27 /* UserTableItemViewController.swift in Sources */,
+				744FD06128659D2B00337D27 /* AlamofireService.swift in Sources */,
+				744FD04128658FE000337D27 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		744FD04428658FE000337D27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744FD04528658FE000337D27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		744FD04C28658FE200337D27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744FD04D28658FE200337D27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		744FD05028658FE200337D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		744FD05128658FE200337D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		744FD05328658FE200337D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1DA431E0C069FDB0787BA8 /* Pods-Notebook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notebook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Notebook.Notebook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		744FD05428658FE200337D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDF71DC38334973E869B2DA /* Pods-Notebook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notebook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Notebook.Notebook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744FD03628658FE000337D27 /* Build configuration list for PBXProject "Notebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744FD05028658FE200337D27 /* Debug */,
+				744FD05128658FE200337D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744FD05228658FE200337D27 /* Build configuration list for PBXNativeTarget "Notebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744FD05328658FE200337D27 /* Debug */,
+				744FD05428658FE200337D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		744FD04728658FE000337D27 /* Notebook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				744FD04828658FE000337D27 /* Notebook.xcdatamodel */,
+			);
+			currentVersion = 744FD04828658FE000337D27 /* Notebook.xcdatamodel */;
+			path = Notebook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 744FD03328658FE000337D27 /* Project object */;
+}
