@@ -45,11 +45,11 @@ class UserTableItemViewController: UIViewController {
         } else if let _image = EGOCache.global().image(forKey: userImageVal) {
             userImageView.image = _image
             userImageView.setupImageViewer()
-        } else {
+        } else if NetworkMonitorService.shared.isConnected {
             loadImage()
         }
         
-        nameLabel.text = nameVal
+        nameLabel.text = "Name: " + nameVal
         
         if genderVal == "male" {
             genderImageView.image = UIImage(named: "male")
@@ -60,16 +60,11 @@ class UserTableItemViewController: UIViewController {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         if let date = dateFormatter.date(from: dobVal) {
             dateFormatter.dateFormat = "dd-MM-yyyy"
-            
-            dobVal = dateFormatter.string(from: date)
-            if let _dobDate = dateFormatter.date(from: dobVal) {
-                dobDate = _dobDate
-            }
-            
-            dobLabel.text = dateFormatter.string(from: date) + " (\(age))"
+            dobLabel.text = "Dob: " + dateFormatter.string(from: date) + " (age: \(age))"
         }
-        emailLabel.text = emailVal
-        locationLabel.text = timeVal
+        
+        emailLabel.text = "Email: " + emailVal
+        locationLabel.text = "Location: " + timeVal
         
         getCurrentDate()
     }
@@ -89,21 +84,22 @@ class UserTableItemViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
     func getCurrentDate() {
         if let _userInfo = userInfo {
             
             var date = Date()
             let myOffset = TimeZone.current.secondsFromGMT()
             let userOffset = _userInfo.location.timezone.offset.replacingOccurrences(of: ":", with: ".")
-            guard let userDoubleOffset = Double(userOffset) else {return}
+            guard let _userOffset = Double(userOffset) else {return}
             
-            date.addTimeInterval(-1 * Double(myOffset) + userDoubleOffset * 3600)
+            date.addTimeInterval(-1 * Double(myOffset) + _userOffset * 3600)
             dateFormatter.dateFormat = "HH:mm:ss"
-            let s = dateFormatter.string(from: date)
-            timeLabel.text = s
+            timeLabel.text = "Local time: " + dateFormatter.string(from: date)
         }
             
     }
+    
     func saveUserInfo(userImageData: String) {
         if let _userInfo = userInfo {
             

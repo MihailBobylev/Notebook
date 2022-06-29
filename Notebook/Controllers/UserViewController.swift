@@ -25,7 +25,7 @@ class UserViewController: UIViewController {
         
         //deleteData()
         loadUserInfo()
-        if usersResponseModel.count == 0 {
+        if usersResponseModel.count == 0 && NetworkMonitorService.shared.isConnected {
             getUsers()
         }
     }
@@ -113,7 +113,7 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastElement = usersResponseModel.count - 1
-        if indexPath.row == lastElement {
+        if indexPath.row == lastElement && NetworkMonitorService.shared.isConnected {
             getUsers()
         }
     }

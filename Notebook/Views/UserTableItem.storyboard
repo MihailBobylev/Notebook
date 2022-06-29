@@ -24,25 +24,25 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФИО" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTP-eT-QjE">
-                                <rect key="frame" x="56" y="332" width="39" height="20.5"/>
+                                <rect key="frame" x="48" y="332" width="39" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ДР" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSn-xJ-NDU">
-                                <rect key="frame" x="56" y="376.5" width="23" height="20.5"/>
+                                <rect key="frame" x="48" y="376.5" width="23" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Часовой пояс" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zd1-Bx-lhU">
-                                <rect key="frame" x="56" y="465.5" width="109.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="48" y="465.5" width="104.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbG-8s-QZX">
-                                <rect key="frame" x="56" y="421" width="48.5" height="20.5"/>
+                                <rect key="frame" x="48" y="421" width="48.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-gk-ash">
-                                <rect key="frame" x="56" y="510" width="52" height="21"/>
+                                <rect key="frame" x="48" y="509" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,9 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QTP-eT-QjE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="9qv-He-VoL"/>
+                            <constraint firstItem="QTP-eT-QjE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="9qv-He-VoL"/>
                             <constraint firstItem="JUL-4X-tqo" firstAttribute="top" secondItem="NRV-kb-iia" secondAttribute="bottom" constant="24" id="AYU-Vm-X3h"/>
-                            <constraint firstItem="dbG-8s-QZX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="DI4-lp-NDJ"/>
+                            <constraint firstItem="dbG-8s-QZX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="DI4-lp-NDJ"/>
                             <constraint firstItem="NRV-kb-iia" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="HnQ-oL-SqZ"/>
                             <constraint firstItem="Sga-gk-ash" firstAttribute="top" secondItem="Zd1-Bx-lhU" secondAttribute="bottom" constant="24" id="Jhn-wt-9M6"/>
                             <constraint firstItem="dbG-8s-QZX" firstAttribute="top" secondItem="DSn-xJ-NDU" secondAttribute="bottom" constant="24" id="OeB-ED-wID"/>
@@ -74,10 +74,10 @@
                             <constraint firstItem="QTP-eT-QjE" firstAttribute="top" secondItem="NRV-kb-iia" secondAttribute="bottom" constant="24" id="WBF-CN-oqN"/>
                             <constraint firstItem="Zd1-Bx-lhU" firstAttribute="top" secondItem="dbG-8s-QZX" secondAttribute="bottom" constant="24" id="Wy1-6I-d7z"/>
                             <constraint firstItem="NRV-kb-iia" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XEn-1s-JLS"/>
-                            <constraint firstItem="Sga-gk-ash" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="fIK-mL-FPE"/>
+                            <constraint firstItem="Sga-gk-ash" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="fIK-mL-FPE"/>
                             <constraint firstItem="DSn-xJ-NDU" firstAttribute="top" secondItem="QTP-eT-QjE" secondAttribute="bottom" constant="24" id="g9B-Y9-wlb"/>
-                            <constraint firstItem="Zd1-Bx-lhU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="oua-tB-gcG"/>
-                            <constraint firstItem="DSn-xJ-NDU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="ubB-I6-v5Q"/>
+                            <constraint firstItem="Zd1-Bx-lhU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="oua-tB-gcG"/>
+                            <constraint firstItem="DSn-xJ-NDU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="ubB-I6-v5Q"/>
                         </constraints>
                     </view>
                     <connections>

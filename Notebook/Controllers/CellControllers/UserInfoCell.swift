@@ -23,10 +23,7 @@ class UserInfoCell: UITableViewCell {
             }
         }
         
-        
-        
         userImageView.contentMode = .scaleToFill
-        
         nameLabel.text = user.name.title + " " + user.name.first + " " + user.name.last
 
     }
