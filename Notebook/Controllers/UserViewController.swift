@@ -114,6 +114,17 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastElement = usersResponseModel.count - 1
         if indexPath.row == lastElement && NetworkMonitorService.shared.isConnected {
+            let spinner = UIActivityIndicatorView(style: .large)
+            spinner.startAnimating()
+            if let tvFooterHeight = tableView.tableFooterView?.bounds.height {
+                spinner.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: tvFooterHeight)
+            } else {
+                spinner.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: tableView.bounds.height / 5)
+            }
+            
+            tableView.tableFooterView = spinner
+            tableView.tableFooterView?.isHidden = false
+
             getUsers()
         }
     }
