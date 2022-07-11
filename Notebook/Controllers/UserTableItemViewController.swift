@@ -77,7 +77,7 @@ class UserTableItemViewController: UIViewController {
             self?.userImageView.setupImageViewer()
             
             if let _imgData = _image.jpegData(compressionQuality: 1)?.base64EncodedString() {
-                self?.saveUserInfo(userImageData: _imgData)
+                DataManager.shared.saveUserInfo(userImageData: _imgData, userInfo: self?.userInfo)
             }
 
         } failure: { error in
@@ -98,39 +98,6 @@ class UserTableItemViewController: UIViewController {
             timeLabel.text = "Local time: " + dateFormatter.string(from: date)
         }
             
-    }
-    
-    func saveUserInfo(userImageData: String) {
-        if let _userInfo = userInfo {
-            
-            //1
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-             
-            let managedContext = appDelegate.persistentContainer.viewContext
-            
-            //2
-            guard let entity = NSEntityDescription.entity(forEntityName: "UserInfoTmp", in: managedContext) else {return}
-            let userNSModel = NSManagedObject(entity: entity, insertInto: managedContext)
-            
-            //3
-            userNSModel.setValue(userImageData, forKey: "image")
-            userNSModel.setValue(_userInfo.dob.date, forKey: "date")
-            userNSModel.setValue(_userInfo.email, forKey: "email")
-            userNSModel.setValue(_userInfo.gender, forKey: "gender")
-            userNSModel.setValue(_userInfo.name.first, forKey: "first")
-            userNSModel.setValue(_userInfo.name.last, forKey: "last")
-            userNSModel.setValue(_userInfo.name.title, forKey: "title")
-            userNSModel.setValue(_userInfo.location.timezone.offset, forKey: "offset")
-            userNSModel.setValue(_userInfo.location.timezone.description, forKey: "userDescription")
-            userNSModel.setValue(_userInfo.dob.age, forKey: "age")
-              
-            //4
-            do {
-                try managedContext.save()
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
     }
     
     func refresh(_ user: Users) {
