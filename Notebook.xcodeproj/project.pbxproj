@@ -21,6 +21,7 @@
 		744FD08B2865EB4500337D27 /* UserTableItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FD08A2865EB4500337D27 /* UserTableItem.storyboard */; };
 		744FD08D2865FA9C00337D27 /* UserTableItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744FD08C2865FA9B00337D27 /* UserTableItemViewController.swift */; };
 		74922C2E286C3D65000F5C2D /* NetworkMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74922C2D286C3D65000F5C2D /* NetworkMonitorService.swift */; };
+		7497AE81287C08DA00EBBA1B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497AE80287C08DA00EBBA1B /* DataManager.swift */; };
 		D33434326A44205E51E42E6E /* Pods_Notebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB72797A23A87FEFE9F362D /* Pods_Notebook.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		744FD08A2865EB4500337D27 /* UserTableItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTableItem.storyboard; sourceTree = "<group>"; };
 		744FD08C2865FA9B00337D27 /* UserTableItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableItemViewController.swift; sourceTree = "<group>"; };
 		74922C2D286C3D65000F5C2D /* NetworkMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorService.swift; sourceTree = "<group>"; };
+		7497AE80287C08DA00EBBA1B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CEDF71DC38334973E869B2DA /* Pods-Notebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook.release.xcconfig"; path = "Target Support Files/Pods-Notebook/Pods-Notebook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			children = (
 				744FD06028659D2B00337D27 /* AlamofireService.swift */,
 				74922C2D286C3D65000F5C2D /* NetworkMonitorService.swift */,
+				7497AE80287C08DA00EBBA1B /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				744FD05E2865984A00337D27 /* UserViewController.swift in Sources */,
+				7497AE81287C08DA00EBBA1B /* DataManager.swift in Sources */,
 				744FD06328659D7100337D27 /* UserModel.swift in Sources */,
 				744FD03F28658FE000337D27 /* AppDelegate.swift in Sources */,
 				744FD04928658FE000337D27 /* Notebook.xcdatamodeld in Sources */,

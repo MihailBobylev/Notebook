@@ -23,8 +23,10 @@ class UserViewController: UIViewController {
         userTable.dataSource = self
         userTable.register(UINib(nibName: "UserInfoCell", bundle: nil), forCellReuseIdentifier: "UserInfoCellId")
         
-        //deleteData()
-        loadUserInfo()
+        if let _usersResponseModel = DataManager.shared.loadUserInfo() {
+            usersResponseModel = _usersResponseModel
+        }
+
         if usersResponseModel.count == 0 && NetworkMonitorService.shared.isConnected {
             getUsers()
         }
@@ -40,59 +42,6 @@ class UserViewController: UIViewController {
         }
     }
     
-    func loadUserInfo() {
-        //1
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-         
-        let managedContext = appDelegate.persistentContainer.viewContext
-         
-        //2
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserInfoTmp")
-        
-        do {
-            if let result = try managedContext.fetch(fetchRequest) as? [NSManagedObject] {
-                for data in result {
-                    let userInfo = Users(
-                        dob: Dob(
-                            age: data.value(forKey: "age") as? Int ?? 0,
-                            date: data.value(forKey: "date") as? String ?? "None"),
-                        email: data.value(forKey: "email") as? String ?? "None",
-                        gender: data.value(forKey: "gender") as? String ?? "None",
-                        location: Location(
-                            timezone: Timezone(
-                                description: data.value(forKey: "userDescription") as? String ?? "None",
-                                offset: data.value(forKey: "offset") as? String ?? "None")),
-                        name: Name(
-                            first: data.value(forKey: "first") as? String ?? "None",
-                            last: data.value(forKey: "last") as? String ?? "None",
-                            title: data.value(forKey: "title") as? String ?? "None"),
-                        picture: Picture(
-                            large: data.value(forKey: "image") as? String ?? ""))
-                    
-                    usersResponseModel.append(userInfo)
-                }
-            }
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func deleteData() {
-        guard let appDelegate =
-              UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            let managedContext = appDelegate.persistentContainer.viewContext
-            let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "UserInfoTmp")
-            let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-            
-            do {
-                try managedContext.execute(deleteRequest)
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-    }
 }
 
 extension UserViewController: UITableViewDelegate, UITableViewDataSource {
